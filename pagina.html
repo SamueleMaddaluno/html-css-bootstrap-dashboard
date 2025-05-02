@@ -51,20 +51,20 @@
             <form class="row g-3">
                 <div class="col-6">
                   <label for="name" class="form-label">Nome Autore</label>
-                  <input type="text" class="form-control" id="name" placeholder="Inserisci il nome autore">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Inserisci il nome autore">
                 </div>
                 <div class="col-6">
                   <label for="surname" class="form-label">Cognome Autore</label>
-                  <input type="text" class="form-control" id="surname" placeholder="Inserisci il cognome dell'autore">
+                  <input type="text" class="form-control" id="surname" name="surname" placeholder="Inserisci il cognome dell'autore">
                 </div>
                 <div class="col-12">
                   <label for="title" class="form-label">Titolo</label>
-                  <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro">
+                  <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci il titolo del libro">
                   <p class="fw-light">Titolo versione italiana</p>
                 </div>
                 <div class="col-md-4">
                   <label for="genre" class="form-label">Genere</label>
-                  <select id="genre" class="form-select">
+                  <select id="genre" name="genre" class="form-select">
                     <option selected>Seleziona il genere</option>
                     <option>Horror</option>
                     <option>Fantasy</option>
@@ -73,23 +73,19 @@
                   </select>
                 </div>
                 <div class="col-md-4">
-                    <label for="surname" class="form-label">Cognome Autore</label>
-                    <input type="text" class="form-control" id="surname" placeholder="Inserisci il cognome dell'autore">
-                  </div>
-                  <div class="col-md-4">
                     <label for="year" class="form-label">Anno di pubblicazione</label>
-                    <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno di pubblicazione">
-                  </div>
-                <div class="col-md-2">
-                  <label for="password" class="form-label">ISBN#</label>
-                  <input type="password" class="form-control" id="password" placeholder="Inserisci codice ISBN#">
+                    <input type="text" name="year" class="form-control" id="year" placeholder="Inserisci l'anno di pubblicazione">
+                </div>
+                <div class="col-md-4">
+                  <label for="isbn" class="form-label">ISBN#</label>
+                  <input type="password" name="isbn" class="form-control" id="isbn" placeholder="Inserisci codice ISBN#">
                 </div>
                 <div>
                     <hr>
                 </div>
                 <div>
                     <label for="note" class="form-label">Note</label>
-                    <textarea class="form-control" id="note" rows="5" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    <textarea class="form-control" id="note" name="note" rows="5" placeholder="Inserisci eventuali note sul libro"></textarea>
                   </div>
 
                 <div class="col-12">
@@ -100,7 +96,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mb-4">
                   <button type="submit" class="btn btn-primary">Aggiungi libro</button>
                 </div>
               </form>
